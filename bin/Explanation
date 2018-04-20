@@ -1,0 +1,1199 @@
+JAVA TUTORIALS
+=========================================================
+Java is high level,robust,secured and object oriented programming.
+Platform : a hardware or software environment in which program runs.S
+Since Java has its own runtime environment JRE and  API. It is called platform.
+Where Java is used
+--------------------------------
+Desktop application.
+MObile application
+Embedded application
+Game application.
+Robotics.
+Web Application.
+Enterprise Application such as banking application.
+
+History of Java
+----------------------------------
+Java History is interesting to know. The history of java starts from member of Green team
+.Java team members also know green team.
+Java is used in internet programming, game, e-business solution.
+1.Games Gosling, Mike Sherdan, and Patrick Naugthan initiated java project.The small team of sun engineers called 
+green team .
+2.Designed for small, embedded system in electronic appliance like set-top boxes
+3.Firstly, It was called GreenTalk  by james gosling
+4.After that it was called OAK.oak is symbol of strength and choosen of many country Like USA,France,German,Romania,etc.
+Feature of Java
+------------------------------------
+1.Simple.
+2.Object-Oriented.
+3.Portable.
+4.Platform independent.
+5.Secured.
+6.Robust.
+7.Architecture neutral.
+8.Dynamic.
+9.Interpreted.
+10.High Performance.
+11.Multithreaded.
+12.Distributed.
+Simple
+-------------------------------------
+According to Sun, Java Language is simple because:syntax is based on C++(so easier for programmers to learn it after c++)
+Object-Oriented.
+-------------------------------------
+Means we organize our software as a combination of different type of objects that incorporates both data and behaviour.
+Object-Oriented programming(OOPs is a methodology that simplify software development and maintenance by providing some rules.
+
+Basic concepts of OOPs are:
+1.Object.
+2.Class.
+3.Inheritance.
+4.Polymorphism
+5.Abstraction
+6.Encapsulation
+Platform independent
+------------------------------------
+A platform is hardware or software environment in which program runs.
+There are two types of platform software based and hardware based.
+
+Java provides software-based platform.
+It has two components:
+1.Runtime Environment.
+2.API(Application Programming Interface).
+
+Java code can be run on multiple platforms e.g Windows, Linux, Sun, Solaris, Mac/OS etc.
+Java code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code 
+because it can be run on multiple platforms i.e. Write Once and Run Anywhere(WORA)
+
+Secured
+-------------------------------------
+Java is secured because:
+1.No explicit pointer.
+2.Java Programs run inside virtual machine sandbox.
+3.Classloader. adds security by separating the package for the classes of the local file system from those are imported from network sources.
+4.Bytecode verifier: Checks the code fragements for illegal code that can violate
+access right to objects.
+5.Security Manager: Determines what resources a class can access such as reading and writing to the local disk.
+
+
+Robust.
+--------------------------------------
+Simply means strong. Java uses strong memory management.There are lack of pointers that avoids security problem.
+There is automatic garbage collection in java. There is exception handling and type checking mechanism in java.
+Architecture-neutral
+--------------------------------------
+There is no implementation dependent features e.g size of primitive type is fixes.
+int data type occupies 2 bytes of memory for 32-bit architecture and 4 bytes of memory for 64 bit architecture.But in Java, it occupies 4 bytes of memory for both 32 and 64 bit architectures.
+
+Portable
+--------------------------------------
+We may carry the java bytecode to any platform.
+
+High-Performance
+--------------------------------------
+Javau is faster than traditional interpretation since byte code is close to native code still somewhat slower than a compiled language(e.g, C++)
+
+Multi-threaded
+--------------------------------------
+A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memeory for each thread. It shares a common memory area. Thread are important for multi-media, Web applications etc.
+What  happens at runtime?
+--------------------------------------
+a class
+a classloader  subystem of jvm that is used to laod class file.
+bytecode verifier. checks the code fragements for illegal code that can violate access right to objects.
+Interpreter: read bytecodes stream then execute the instructions.
+Runtime
+Hardware
+
+Difference between JDK,JRE and  JVM
+-------------------------------------------
+JVM(Java Virtual Machine) is an abstract machine. It is a specification that provides runtime environment in which java bytecode can be executed.
+JVM, jdk, jre is platform dependent because  configuration of each OS differs. But java is platform independent.
+
+JVM main tasks.
+1.load the code.
+2.verifies the code.
+3.Execute the code 
+4.provide runtime environment.
+
+JRE is an acronym for Java Runtime Environment. It is used to provide runtime environment. It is the implementatio of JVM. 
+It physically exists. It contains set of libraries + other files that JVM uses at runtime.
+
+Implementation of JVMs are also actively released by other companies beside
+JRE(JVM, set of libraries e.g rt.jaretc. and others)
+
+JDK is an acronym  for Java Development Kit. It physically exist
+It contains JRE + development tools.
+INTERNAL DETAILS OF JVM
+--------------------------------------
+JVM (Java Virtual Machine).
+What is JVM 
+--------------
+It is:
+1.A Specification where working of java virtual machine is specified. BUT implementation provider is independent to choose the 
+algorithm. its implementation has been provided by Sun and other companies.
+2.An Implementation: its implementation is known as JRE(Java Runtime Environment).
+3.Runtime instance : Whenever you write java command on the command prompt to run the java class, an instance of JVM is created
+What it does
+--------------
+1.load code
+2.Verifies code.
+3.Execute code.
+4.Provide runtime environment.
+JVM provides definitions for the:
+.Memory area.
+.Class file format.: field and method
+.Register set: It contains the address of the Java Virtual Machine. instruction currently begin executed.
+.Garabage-collected heap.
+.Fatal error reporting etc.
+
+Heap: It is the runtime data area in which objects are allocated.
+Stack : java stack stores frames. It holds local variables and partial results, and plays a part in method invocation and return.
+Native Method stack: It contains all native methods used in application
+Execution Engine: 
+it contains:
+1.A Virtual processor
+2.Interpreter:Read bytecode stream then execute instruction.
+3.Just-In-Time(JIT)Compiler:It is used to improve the performance.JIT compiles parts of the byte code that have similar functionality at the same time and hence reduces the amount and hence reduce the amount of time needed for compilation. 
+
+Type of Variable
+-------------------------------------
+Thre are three types of variables in java.
+1.local variable.
+2.instance variable
+3.static variable
+1.Local variable
+-------------------------------------
+A variable which is declared inside the method is called local variable.
+2.Instance variable
+--------------------------------------
+A variable which is declared inside the class but outside the method.not declared as static.
+3.A Static variable
+-------------------------------------
+A variable that is declared  as a static variable. It cannot  be local we will have detailed learning of these variables in next chapters.
+Data Types in Java
+Data types represent the different values to be stored in the variable.
+------------------------------------
+Primitive data types.
+1.Boolean(Boolean)
+2.Numeric(character and integral)
+i.character(char)
+ii.integral(Integer and Floating-point)
+a.Integer
+.byte
+.short
+.int
+.long
+b.Float-point
+.float
+.double
+Non-primitive data types.
+Array,String etc..
+OPERATORS
+=================================================
+1.Unary Operator (expr++, expr-- means postfix and ++exp , --exp means prefix)
+2.Arithmetic Operator(+,-,*, /)
+3.Logic Operator (AND, OR symbolized by && and ||)
+4.Relation Operator(Comparison( <= , >= , <> instance of ) and equality(==, !=))
+5.Assignment(+=,*=,/=,-=,%=, ^=,|=)
+6.Shift operator(<<, >>, >>>)
+7.Bitwise(Bitwise AND &, bitwise exclusive OR ^,bitwise inclusive OR |)
+8.Ternary(?:)
+Logical || or bitwise | logical not check the second if the first is true but bitwise always check both side.
+3 TYPE OF COMMENT IN JAVA
+===================================================
+1.Single Line Comment.
+2.Multiple Line Comment. /* Multiple Line Comments/
+3.Documentation Comment. /** Documentation comments */
+
+Debugging
+====================================================
+As mentioned in Section 1.10.1, syntax errors are easy to find and easy to correct because the
+compiler gives indications as to where the errors came from and why they are there. Runtime
+errors are not difficult to find either, because the Java interpreter displays them on the console
+when the program aborts. Finding logic errors, on the other hand, can be very challenging.
+Logic errors are called bugs. The process of finding and correcting errors is called
+debugging. A common approach to debugging is to use a combination of methods to help
+pinpoint the part of the program where the bug is located. You can hand-trace the program
+(i.e., catch errors by reading the program), or you can insert print statements in order to show
+the values of the variables or the execution flow of the program. These approaches might work
+for debugging a short, simple program, but for a large, complex program, the most effective
+approach is to use a debugger utility.
+JDK includes a command-line debugger, jdb, which is invoked with a class name. jdb is
+itself a Java program, running its own copy of Java interpreter. All the Java IDE tools, such
+as Eclipse and NetBeans, include integrated debuggers. The debugger utilities let you follow
+the execution of a program. They vary from one system to another, but they all support most
+of the following helpful features.
+■ Executing a single statement at a time: The debugger allows you to execute one
+statement at a time so that you can see the effect of each statement.
+■ Tracing into or stepping over a method: If a method is being executed, you
+can ask the debugger to enter the method and execute one statement at a time in the
+method, or you can ask it to step over the entire method. You should step over the
+entire method if you know that the method works. For example, always step over
+system-supplied methods, such as System.out.println .
+■ Setting breakpoints: You can also set a breakpoint at a specific statement. Your
+program pauses when it reaches a breakpoint. You can set as many breakpoints as
+you want. Breakpoints are particularly useful when you know where your program-
+ming error starts. You can set a breakpoint at that statement and have the program
+execute until it reaches the breakpoint.
+■ Displaying variables: The debugger lets you select several variables and display
+their values. As you trace through a program, the content of a variable is continuously
+updated.
+■ Displaying call stacks: The debugger lets you trace all of the method calls. This
+feature is helpful when you need to see a large picture of the program-execution flow.
+■ Modifying variables: Some debuggers enable you to modify the value of a vari-
+able when debugging. This is convenient when you want to test a program with dif-
+ferent samples but do not want to leave the debugger.
+
+LOOP (LOOP CONSTRUCTS)
+=========================================================================
+Counter-Controlled Loop : when you how many times the loop body need to be executed.
+Control loop with sentinel value: loop that is using sentinel value to control its execution is called :sentinel controlled loop: sential value: special
+value when reading and processing a set of values.
+------>Have a look at LoopingConstructs source code .
+INPUT AND OUTPUT REDIRECTION
+-----------------------------
+IF you have many number you can not type all of them from keyboard better is to place in file and name.txt and
+java SentinelValue < input.txt // input redirection
+Similary there is output redirect sending output to file rather than displaying on console.
+java className > output.txt
+for loop
+------------------
+use variable to control how many time loop executes
+for(int i = initial  value ; i < loop-continuation-condition ; i++) // should force
+good practice initial must be declared inside the loop block because if before it can referenced somewhere else.
+Note
+f or loop variations
+The initial-action in a for loop can be a list of zero or more comma-separated
+variable declaration statements or assignment expressions. For example:
+----------------------- for(int i = 0, j = 0, i + j < 10; i++, j++)
+for loop and while loop is called pretest loop, because loop continuation condition is checked before loop body is executed but do while loop 
+is executed is posttest loop because is executed loop body is executed first then loop continuation condition is  checked after condition.
+OOP(Object Oriented Programming) 
+==================================================================
+The programming paradigm where everything is represented as an object is known as Object Oriented Programming Language.
+Object: means a real world entity such as pen, chair, table etc..
+Object Oriented Programming: a methodology or paradigm to design using classes and object. It provides easy development and maintenance by providing concepts:
+1.Object.
+2.Class
+3.Inheritance
+4.Polymorphism
+5.Abstraction.
+6.Encapsulation.
+An Object : An entity that has state and behavior is known as object.
+--------------------------------
+A Class: A Collection of an object.
+--------------------------------
+Inheritance: If an object require all properties and behavior of parent object is called inheritance.It provide code reusability. It is used to achieve runtime
+-------------------------------
+polymorphism.
+-------------------------------
+Polymoriphism:One task can be achieved by two ways: ex speak something : cat speaks meaw, dog barks.
+Abstraction
+-------------------------------
+Hiding internal details and showing functionality: ex phone call, we don't know
+the internal processing.
+Encapsulation
+-------------------------------
+Binding (or wrapping ) code and data into single unit such as encapsulation.
+Advantages of OOP over Procedural-Oriented Programming Language
+-----------------------------
+1.OOPs make easier development and maintenance whereas procedural Oriented programming language is not easy to manage if code grows as project size grows.
+2.OOPs provide data hiding whereas in procedural Oriented programming global data can be accessed from anywhere.
+3.OOPs provide  ability to stimulate a real world event much more effectively.
+Difference between OOP AND Object based programming Language
+-----------------------------
+Object based programming language follows all feature of OOPs except inheritance. ex : javascript, VBscript are example of object oriented programming language.
+  
+An Object
+----------------------
+An entity that has state and behavior is known as an object: ex; bike, car, chair, a pen etc ..
+It can be physical or logical.
+An Object has three characteristics 
+------------------------------
+1. A state : represent data(value of an object).
+2.A behavior: represent the functionality of an object
+3.identity:Object identity is typically implemented via Unique ID. It is not visible to external user but it is used to identify by java
+virtual machine to identify each object uniquely.
+A Pen is an object, its name Raynold,color : blue , known as state , write is behavior
+Object definition
+------------------------------
+Object is a real world entity.
+Object is an instance of a class
+Object is a run time entity.
+Object is an entity with state and behavior
+ A class definition
+--------------------------------------
+A class is a group of object which have a common properties. It is blueprint or template from which object are created.
+It is logical entity, it can't be physical.
+A class contains :
+--------------------
+.Fields
+.Methods
+.Constructors
+.blocks
+.Nested class and Interface.
+Syntax to declare a class
+--------------------------
+class <class-name>{
+
+field
+method
+}
+We call it instance because it does not get memory at compile time but at run time that's why
+
+new keyword in java
+---------------------------------
+used to allocate a memory at runtime. All object get memory in heap memory area.
+Three ways to initialize object
+---------------------------------
+1.Through reference variable.
+2.By Method
+3.By Constructor
+
+Different ways to  create an object in Java
+-------------------------------------------
+1.By new keyword
+2.by newinstance() method.
+3.by clone method
+4.by deserialization.
+5.by factory method.
+Anonymous Object means nameless. When you create object without reference It is called.
+N.B if you have to use an object only once. anonymous object is good approach.
+ex ----> new Calculator()
+new Calculator.fact(5);
+------> through reference Calculator c = new Calculator();
+c.fact(5);
+Constructor in Java
+Purpose
+----
+Initialize the value for an object.
+rule for creating constructor
+------------------
+must have the same name with class.
+must have no return type
+1.Default Constructor
+2.Parametrized Constructor.
+Special type of method that is used to initialize the object.
+Java Copy Constructor.
+------------------------
+There is no copy Constructor in java but we can copy the values of one object to another like copy Constructor in c++.
+There are many ways to copy  the values of one object into another in Java.They are
+1.By Constructor.
+2.By Assigning The values of one object into another.
+3.By Clone() Method of an object class.
+
+1.BY Constructor
+---------------------------
+class Student(){
+int id;
+String name;
+student(int i , String n){
+
+id = i;
+name = n
+}
+Student( Student s){
+id = s.id;
+name = s.name;
+
+public void display(){
+System.out.println( id  + " " + name);
+}
+
+}
+
+pubic static void main (String [] args){
+
+Student s1 = new Student(100, " MUTUYIMANA Origene");
+student s1 = new Student(s1);
+s1.display();
+s2.display();
+
+Does Java Constructor return any value?
+Yes. That is current class instance(you can not use return type yet.It returns value.)
+Can Constructor perform other tasks than initialization
+Yes, like object creating, starting a thread, calling a method. you can perform any operation in constructor like you do it in Method
+
+}
+}
+
+Static keyword
+===================================
+static keyword is mainly used for memory management.
+You can apply it for variable, method, blocks and nested class
+Static can 
+1.variable(known as class variable).
+2.Method(known as class method).
+3.Block
+4.Nested class
+
+JAVA Static Variable
+---------------------------
+if you declare any variable as static  is called static variable.
+static variable can be used to refer the common properties  of all object( that is not unique for each object).
+ex: company name of employees, college name of students.
+Static variable get memory only once in class area at the time of class loading.
+Advantages
+--------------------------
+It is used to make your program memory efficient(It saves a memory).
+Java Static Method
+------------------------
+1.Belong to the class rather than an object.
+2.Can be invoked without the need for creating an instance of a class
+3.A static method can access static data member and can change value of it.
+  int rollno;  
+     String name;  
+     static String college = "ITS";  
+       
+     static void change(){  
+     college = "BBDIT";  
+     }  
+  
+     Student9(int r, String n){  
+     rollno = r;  
+     name = n;  
+     }  
+  
+     void display (){System.out.println(rollno+" "+name+" "+college);}  
+  
+    public static void main(String args[]){  
+    Student9.change();  
+  
+    Student9 s1 = new Student9 (111,"Karan");  
+    Student9 s2 = new Student9 (222,"Aryan");  
+    Student9 s3 = new Student9 (333,"Sonoo");  
+  
+    s1.display();  
+    s2.display();  
+    s3.display();  
+    
+    Restriction for static Method
+    ------------------------------
+    1. Static method can not use non static data member or call non static method directly
+    2. this and super can not be used for static context.
+    Why Java main Method is static
+   -=-=-=-=-=-=--=-++++++++++++++++++++++++
+   Because Object is not required to call static method if it were non static method, jvm create object first then call call
+   method which will lead to extra memory location.
+   Java static block
+  -------------------------------------------
+  A2(){
+  
+  static {System.out.println(" Static block is invoked")}
+  }
+  
+  public static void main(String [] args){
+  
+  System.out.println( "Hello Main")
+  
+  }
+  
+  This Keyword
+  ---------------------------------------------
+  6 usage of this 
+  ------
+  1. can be used to invoke a current instance variable
+  2.can be used to invoke current class method.
+  3.can be used to invoke current class constructor.
+  4. can be used as an argument in method call
+  5.can be used as an argument in constructor call.
+  6.can be used to return class instance from method.
+  
+  1.This: to refer current class instance variable
+  ---------------------------
+  The this keyword can be used to refer the current class instance variable. If there is ambiguity the instance variable and parameters,
+  this keyword resolves the problem of ambiguity.
+      class Student{  
+    int rollno;  
+    String name;  
+    float fee;  
+    Student(int rollno,String name,float fee){  
+    rollno=rollno;  
+    name=name;  
+    fee=fee;  
+    }  
+    void display(){System.out.println(rollno+" "+name+" "+fee);}  
+    }  
+    class TestThis1{  
+    public static void main(String args[]){  
+    Student s1=new Student(111,"ankit",5000f);  
+    Student s2=new Student(112,"sumit",6000f);  
+    s1.display();  
+    s2.display();  
+    }}  
+    Solution of the above problem by this keyword
+    ----------------------------
+        class Student{  
+    int rollno;  
+    String name;  
+    float fee;  
+    Student(int rollno,String name,float fee){  
+    this.rollno=rollno;  
+    this.name=name;  
+    this.fee=fee;  
+    }  
+    void display(){System.out.println(rollno+" "+name+" "+fee);}  
+    }  
+      
+    class TestThis2{  
+    public static void main(String args[]){  
+    Student s1=new Student(111,"ankit",5000f);  
+    Student s2=new Student(112,"sumit",6000f);  
+    s1.display();  
+    s2.display();  
+    }}  
+    program where this keyword is not required
+    ----------------
+    class Student{  
+int rollno;  
+String name;  
+float fee;  
+Student(int r,String n,float f){  
+rollno=r;  
+name=n;  
+fee=f;  
+}  
+void display(){System.out.println(rollno+" "+name+" "+fee);}  
+}  
+  
+class TestThis3{  
+public static void main(String args[]){  
+Student s1=new Student(111,"ankit",5000f);  
+Student s2=new Student(112,"sumit",6000f);  
+s1.display();  
+s2.display();  
+--------->>>>>> It is better approach to use meaningful names for variables. So we use same name for instance variables 
+and parameters in real time, and always use this keyword.
+2.This: To invoke current class method
+------------------------------------------------
+You may invoke the method of the current class by using the this keyword. If you don't use the this keyword, compiler automatically adds this 
+keyword while invoking the method. 
+Let's see the example.
+
+Class A(){
+void m(){
+}
+void n(){
+m() compiler uses this// this.m();
+}
+}
+public static void main (String [] args){
+new A().n();
+}
+3. This: invoke the current constructor
+---------------------
+class A(){
+
+A(){
+}
+A(int x){
+this();
+}
+}
+public static void main(String [] args){
+A()
+}
+4.This: pass as an argument in the method
+---------------------------
+    class S2{  
+      void m(S2 obj){  
+      System.out.println("method is invoked");  
+      }  
+      void p(){  
+      m(this);  
+      }  
+      public static void main(String args[]){  
+      S2 s1 = new S2();  
+      s1.p();  
+      }  
+    }  
+  
+  5. This: pass as an argument in the constructor call
+  -----------------------
+  class A(){
+  B obj;
+  A(B obj){
+  this.obj = obj;
+  }
+  void display(){
+  System.out.println( obj.data);
+  }
+  }
+  
+  class B(){
+  int data = 10;
+ A a = new A();
+ a.display();
+  }
+  
+  public static void main(String[]args){
+  B b = new B();
+
+  }
+  6.This can be used to return a current class instance  from method
+  ---------------------------------------------------------
+  Syntax of this that can be returned as a statement
+
+    return_type method_name(){  
+    return this;  
+    }  
+    
+        class A{  
+    A getA(){  
+    return this;  
+    }  
+    void msg(){System.out.println("Hello java");}  
+    }  
+    class Test1{  
+    public static void main(String args[]){  
+    new A().getA().msg();  
+    }  
+    }  
+    
+    Inheritance in Java
+    =====================================================
+    Inheritance in Java is a mechanism in which object acquire all properties and bahaviors of parent object.
+    you can create classes built on existing class.
+    
+    Inheritance  represents IS-A relationship also known as parent-child relationship.
+    Why use inheritance in Java
+    ---------------------------------------
+    1.Method overriding(so runtime polymoriphism can be achieved).
+    2.Code Reusability.
+    Syntax of Java inheritance
+    
+        class Subclass-name extends Superclass-name  
+    {  
+       //methods and fields  
+    }  
+    The extends keyword indicates that you are making a new class that derives from an existing class. The meaning of "extends" is to increase the functionality.
+    Java has 3 type of inheritance
+    ------------------------
+    1.Single
+    2.Multilevel
+    3.Hierarchical	
+    
+    Aggregation
+    ============================================
+    When to use Aggregation
+    ------
+    1.code reuse  is also achieved by aggregation when there is no relationship
+    2.Inheritance should be used only if the relationship is maintained through lifetime of an object otherwise aggregation is the best choice.
+    METHOD Overloading
+    ==========================================
+    If a class has multiple method having the same name but differ in parameters. It is known as METHOD OVERLOADING.
+    -----> advantage of Method overloading increases the readability of a program.
+    Different ways to overload the method.
+    --------------------------------------
+    1.By changing number of arguments.
+    2.By changing the data type
+   N.B In java Method overloading is not possible if we change the return type only.
+   ) Why Method Overloading is not possible by changing the return type of method only?
+
+In java, method overloading is not possible by changing the return type of the method only because of ambiguity. Let's see how ambiguity may occur:
+    class Adder{  
+    static int add(int a,int b){return a+b;}  
+    static double add(int a,int b){return a+b;}  
+    }  
+    class TestOverloading3{  
+    public static void main(String[] args){  
+    System.out.println(Adder.add(11,11));//ambiguity  
+    }}  
+As displayed in the above diagram, byte can be promoted to short, int, long, float or double. The short datatype can be promoted to int,long,float or double. The char datatype can be promoted to int,long,float or double and so on.
+   METHOD OVERRIDING
+   ==========================================
+   IF subclass(child class ) has the same name as declared in parent class . It is known as Method overriding.
+   Usage of Method Overriding
+   --------------------------
+   1.Method overriding is used to provide specific implementation of method that is provided by its  parent class.
+   2.Method overriding is used for runtime polymoriphism.
+   
+   Rules of java Method overriding
+   -------
+  1. Must have the same name as in parent class.
+  2.Must have the same parameter as in parent class.
+  3.Must be IS-A relation.
+  Covariant Return Type
+==============================================
+The covariant return type specifies that the return type may vary in the same direction as the subclass.
+Before Java5, it was not possible to override any method by changing the return type. But now, since Java5, it is possible to override method by changing the return type if subclass overrides any method whose return type is Non-Primitive but it changes its return type to subclass type. Let's take a simple example: 
+  SUPER keyword in Java
+  ===========================================
+  1.Super can be used to refer immediate parent class instance variable.
+  ----------------
+      class Animal{  
+    String color="white";  
+    }  
+    class Dog extends Animal{  
+    String color="black";  
+    void printColor(){  
+    System.out.println(color);//prints color of Dog class  
+    System.out.println(super.color);//prints color of Animal class  
+    }  
+    }  
+    class TestSuper1{  
+    public static void main(String args[]){  
+    Dog d=new Dog();  
+    d.printColor();  
+    }}  
+  2.Super can be used to invoke immediate  parent class method.
+      class Animal{  
+    void eat(){System.out.println("eating...");}  
+    }  
+    class Dog extends Animal{  
+    void eat(){System.out.println("eating bread...");}  
+    void bark(){System.out.println("barking...");}  
+    void work(){  
+    super.eat();  
+    bark();  
+    }  
+    }  
+    class TestSuper2{  
+    public static void main(String args[]){  
+    Dog d=new Dog();  
+    d.work();  
+    }}  
+  3.Super can be used to invoke the parent class constructor
+      class Animal{  
+    Animal(){System.out.println("animal is created");}  
+    }  
+    class Dog extends Animal{  
+    Dog(){  
+    super();  
+    System.out.println("dog is created");  
+    }  
+    }  
+    class TestSuper3{  
+    public static void main(String args[]){  
+    Dog d=new Dog();  
+    }}  
+   
+   Final Keyword
+   ====================================================
+   Final can be.
+   ------
+   1.variable.
+   2.method
+   3.class
+   1.final variable
+   ----------------------------------
+   initialized once and can not be changed.
+   class Bike9{  
+ final int speedlimit=90;//final variable  
+ void run(){  
+  speedlimit=400;  
+ }  
+ public static void main(String args[]){  
+ Bike9 obj=new  Bike9();  
+ obj.run();  
+ }  
+}//
+Output of this program: Compiler Time Error.
+   N.B blank final variable or uninitialized variable is a final variable  that is not initialized.
+ 2.Final Method
+ -----------------------------------
+ If you make a method final. you can not override it.
+     class Bike{  
+      final void run(){System.out.println("running");}  
+    }  
+         
+    class Honda extends Bike{  
+       void run(){System.out.println("running safely with 100kmph");}  
+         
+       public static void main(String args[]){  
+       Honda honda= new Honda();  
+       honda.run();  
+       }  
+    }  
+    output: Compiler time Error.
+    Final class 
+    ------------------------------------
+    If you make class final. you can not extend it.
+        final class Bike{}  
+      
+    class Honda1 extends Bike{  
+      void run(){System.out.println("running safely with 100kmph");}  
+        
+      public static void main(String args[]){  
+      Honda1 honda= new Honda();  
+      honda.run();  
+      }  
+    }  
+    output: compiler time error.
+    
+Q) Is final method inherited?  
+Ans) Yes, final method is inherited but you cannot override it. For Example:
+class Bike{  
+  final void run(){System.out.println("running...");}  
+}  
+class Honda2 extends Bike{  
+   public static void main(String args[]){  
+    new Honda2().run();  
+   }  
+}
+
+Que) Can we initialize blank final variable?
+
+Yes, but only in constructor. For example:
+class Bike10{  
+  final int speedlimit;//blank final variable  
+    
+  Bike10(){  
+  speedlimit=70;  
+  System.out.println(speedlimit);  
+  }  
+  
+  public static void main(String args[]){  
+    new Bike10();  
+ }  
+}
+Q) What is final parameter?
+
+If you declare any parameter as final, you cannot change the value of it.
+
+    class Bike11{  
+      int cube(final int n){  
+       n=n+2;//can't be changed as n is final  
+       n*n*n;  
+      }  
+      public static void main(String args[]){  
+        Bike11 b=new Bike11();  
+        b.cube(5);  
+     }  
+    }  
+    
+    Q) Can we declare a constructor final?
+
+No, because constructor is never inherited.
+
+Static Binding and Dynamic Banding
+=============================================================
+Static Binding is also called early Binding
+Dynamic Binding is also called late Binding
+Dog d1, is a type of dog 
+d1 = new Dog() d1, is an instance of class animal.
+when a type of object is determined at compile time is called static binding like private, static method and so on.
+--------------------------------------------
+When a type of object is determined at run time is called dynamic binding 
+Example of dynamic binding
+
+    class Animal{  
+     void eat(){System.out.println("animal is eating...");}  
+    }  
+      
+    class Dog extends Animal{  
+     void eat(){System.out.println("dog is eating...");}  
+      
+     public static void main(String args[]){  
+      Animal a=new Dog();  
+      a.eat();  
+     }  
+    }  
+    
+    Abstract Class
+    ========================================================
+    hiding implementation and showing only functionality to the user. another word hiding details and showing important things.
+    ex. you type text and send a message. you don't know internal processing of message delivery.
+    Ways to achieve Abstract
+    ------------------------------------------
+    1.Abstract class
+    2.Interface
+    A Class that is declared as abstract is known as abstract class. It need to be extended and its method implemented. It can not be instantiated. 
+    Abstract Method
+    ----
+    A method declared as abstract and 	does not have implementation is known as abstract.
+    
+    N.B Reason for interface : not forced to override a method in subclass.
+    
+    Interface
+    ==========================================================
+    Interface is a  blueprint of a class.It has static constants and abstract methods.
+    
+    Interface in Java is a mechanism used to achieve abstraction. There can be only java abstract method not body. It is used
+    to achieve abstraction and multiple inheritance in java.
+    Java interface is also represents IS-A relationship.
+    
+    WHY USE JAVA INTERFACE
+    --------------------------------------------
+    3 main reasons
+    1.It is used to achieve abstraction.
+    2.It is used to achieve loose coopling.
+    3.By interface, It can support functionality of multiple inheritance.
+    Java 8 Default Method in Interface
+
+Since Java 8, we can have method body in interface. But we need to make it default method. Let's see an example:
+
+File: TestInterfaceDefault.java
+
+    interface Drawable{  
+    void draw();  
+    default void msg(){System.out.println("default method");}  
+    }  
+    class Rectangle implements Drawable{  
+    public void draw(){System.out.println("drawing rectangle");}  
+    }  
+    class TestInterfaceDefault{  
+    public static void main(String args[]){  
+    Drawable d=new Rectangle();  
+    d.draw();  
+    d.msg();  
+    }}  
+
+Test it Now
+
+Output:
+
+drawing rectangle
+default method
+
+Java 8 Static Method in Interface
+
+Since Java 8, we can have static method in interface. Let's see an example:
+
+File: TestInterfaceStatic.java
+
+    interface Drawable{  
+    void draw();  
+    static int cube(int x){return x*x*x;}  
+    }  
+    class Rectangle implements Drawable{  
+    public void draw(){System.out.println("drawing rectangle");}  
+    }  
+      
+    class TestInterfaceStatic{  
+    public static void main(String args[]){  
+    Drawable d=new Rectangle();  
+    d.draw();  
+    System.out.println(Drawable.cube(3));  
+    }}  
+
+Test it Now
+
+Output:
+
+drawing rectangle
+27
+
+Q) What is marker or tagged interface?
+
+An interface that have no member is known as marker or tagged interface. For example: Serializable, Cloneable, Remote etc. They are used to provide some essential information to the JVM so that JVM may perform some useful operation.
+
+    //How Serializable interface is written?  
+    public interface Serializable{  
+    }  
+
+Nested Interface in Java
+
+Note: An interface can have another interface i.e. known as nested interface. We will learn it in detail in the nested classes chapter. For example:
+
+    interface printable{  
+     void print();  
+     interface MessagePrintable{  
+       void msg();  
+     }  
+    }  
+    
+    Abstract class	Interface
+1) Abstract class can have abstract and non-abstract methods.	Interface can have only abstract methods. Since Java 8, it can have default and static methods also.
+2) Abstract class doesn't support multiple inheritance.	Interface supports multiple inheritance.
+3) Abstract class can have final, non-final, static and non-static variables.	Interface has only static and final variables.
+4) Abstract class can provide the implementation of interface.	Interface can't provide the implementation of abstract class.
+5) The abstract keyword is used to declare abstract class.	The interface keyword is used to declare interface.
+6) Example:
+public abstract class Shape{
+public abstract void draw();
+}	Example:
+public interface Drawable{
+void draw();
+}
+
+JAVA PACKAGE
+======================================================
+is a group of similar class, interface and sub-package.
+package in java can be categorized into two form:
+1. Built-in package
+2. User-defined package.
+Advantages of packages
+------------------------------
+1.Java package is used to categorize the classes and interfaces so that they can be easily maintained.
+2.Java package provide access protection.
+3.Java package remove naming collection.
+
+Java (lang{System.class, String.class},util{ArrayList.class, map.class}, awt(button.class))
+
+How to access package from Another
+----------------------------------------------
+3 ways to access package
+---------------------
+1.import packagename.*;   //all class and interface of package will be access except of subpackages.
+2.import packagename.classname.
+3.fully qualified name
+N.B import : keyword that is used to make a class and interfaces of another package accessed to the current package.
+
+1. example of packagename.*
+____________________________________________________________
+
+package pack;
+public class A(){
+void msg(){
+ System.out.println();
+}
+}
+
+package mypack;
+import pack.*;  // type 1 of importing package.
+ public class B(){
+void msg(){
+ System.out.println();
+}
+public static void main(String[]args){
+
+A obj = new A();
+obj.msg;
+}
+}  
+   
+2. example of packagename.classname.
+__________________________________________________________
+package mypack;
+import pack.A   // importing with class name.
+public class B(){
+void msg(){
+ System.out.println();
+}
+public static void main(String[]args){
+
+A obj = new A();
+obj.msg;
+}
+} 
+
+3. Example of fully qualified name
+________________________________________________________________
+package mypack;
+public class B(){
+void msg(){
+ System.out.println();
+}
+public static void main(String[]args){
+
+pack.A obj = new pack.A();   // fully qualified name
+obj.msg;
+}
+} 
+A subpackage in Java
+________________________________________________________________
+a package inside another package is called subpackage. It should be created to categorize package further.
+For example sun microsystem  has defined package named java that contains many classes like system, String, Reader, Writer, Socket, ServerSocket and son
+but Sun subcategorize java package also into subpackage such as lang(String, System), net(Socket and ServerSockect), io(Writer and Reader).
+
+N.B THE STANDERD OF DEFINING PACKAGE IS : domain.company.package for example rw.datasystems.start or co.agrit.start
+
+Ways to load the class files or jar files
+There are two ways to load the class files temporary and permanent.
+
+    Temporary
+        By setting the classpath in the command prompt
+        By -classpath switch
+    Permanent
+        By setting the classpath in the environment variables
+        By creating the jar file, that contains all the class files, and copying the jar file in the jre/lib/ext folder.
+
+Rule: There can be only one public class in a java source file and it must be saved by the public class name.
+
+MODIFIERS
+==================================================================
+There are two type of modifiers 
+1.Access Modifiers.
+2.Non Access Modifiers.
+1. Access Modifiers.
+_______________________________________________________
+Access modifiers in java specifies the visibility or accessibility(scope ) of data member, method, constructor and class.
+4 type of access modifiers.
+_________________________________________
+1.private
+2.default
+3.protected.
+4.public
+NON aCCESS MODIFIERS ; static, abstract, synchronized, native, volatile, and transcient. Here will focus only on access modifiers.
+
+1.private
+--------
+accessible only within a class
+Role of private constructor. you can not create instance of that class from outside.
+N.B A class can not be private or protected expect if it is nested.
+
+2.default.
+------
+If you do not use any modifier. It is treated as 'default' by default. It is only accessible only with package.
+
+3. protected 
+---------------------------
+Protected is accessible within a package  or outside of package but through inheritance only.
+
+4. public.
+-----------------------
+It is accessible everywhere. It has widest scope among all other modifiers.
+
+ENCAPSULATIOON
+==========================================================================
+process of wrapping code and data into single unit
+We create a fully encapsulated class by making all data members of a class to be a private.
+
+By proving setter and getter, you can make the class read only and write only.
+
+It provides you the control over the data. Suppose you want to set the value of id i.e. greater than 100 only, you can write the logic inside the setter method.
+
+Object class in Java
+==========================================================================
+It is a parent class of all classes in java
+
+The Object class is beneficial if you want to refer any object whose type you don't know. Notice that parent class reference variable can refer the child class object, know as upcasting.
+
+OBJECT CLONING IN JAVA
+=========================================================================
+It is a way of creating exact copy of an object. For this purpose the clone() method of an object is used to clone an object.
+The java.lang.Cloneable interface must be implemented by the class whose object clone we want to create. If we don't implement Cloneable interface, clone() method generates CloneNotSupportedException.
+
+The clone() method is defined in the Object class. Syntax of the clone() method is as follows: 
+
+why we use clone () method.
+--------------------------------------------------------
+save extra processing task for creating exact copy of an object
+advantages
+---------------------------------------------------------
+less processing task.
+
+Arrays
+=============================================================================
+Normally, array is a collection of similar type of elements that have contiguous memory location.
+
+Java array is an object the contains elements of similar data type. It is a data structure where we store similar elements. We can store only fixed set of elements in a java array.
+
+Array in java is index based, first element of the array is stored at 0 index.
+
+Advantage of java array
+-------------------------
+1.code optimization, we can easily retrieve or  sort data easily.
+2.Random Access: we can get any data located at any index.
+Disadvantages
+-------------------------
+Set Limit size
+we can store only fixed size of array in java, It does not grow its size at runtime. to solve the problem collection framework must be used.
+Type of array
+______________________________________
+1. Single dimensional arraya.
+
+Wrapper Class
+==============================================================================
+Provide the mechanism to convert a primitive into an object and object into a primitive.
+autoboxing and unboxing.
+
+RECURSION IN JAVA
+==============================================================================
+It is a process in java in which a method call itself continuously. A Method that call itself is called in recursive method.
+It make code compact but difficult to understand.
+ 
+

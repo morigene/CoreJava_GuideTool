@@ -1,0 +1,27 @@
+The Java Regex or Regular expression is an API to define pattern for searching and manipulating strings.
+It is widely used to define constraint on strings such as password and email validation.
+
+Java Regex API provides 1 interface and 3 classes in java.util.regex package.
+
+java.util.regex.package.
+It provides following classes and interface for regurlar experssion.
+----------------------------------
+The Matcher and Pattern classes are widely used in java regular experession .
+1.MatchResult Interface
+___________________________________________________
+2.Matcher class
+___________________________________________________
+.boolean matches() //test whether the regular experssion matches the pattern.
+.boolean find() // find the next experession that matches the pattern.
+.boolean  find(int start)  // find the next expression that matches the pattern from the given start number.
+.int end() // return an end index.
+
+3.Pattern class
+___________________________________________________
+.static pattern compile(String regex) // compile the given regex and return the instance of pattern
+.Matcher matcher(CharSequence input).  // creates a matcher that matches the given input with pattern.
+.static boolean matches(String regex, CharSequence input)  // it works as the combination of compile and matcher methods. it compiles the regular expression and matches the given input with the pattern.
+.String [] split(CharSequence input)   // splits the given input string around matches of given pattern.
+.String pattern () return the regex pattern.
+4.PatternSyntaxException class.
+

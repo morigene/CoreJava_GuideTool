@@ -1,0 +1,31 @@
+A string is an  object that represent sequence of characters.
+Java string class provide method such as compare(), concat(), replace() , equal(), split(),length(), replace(),compareTo(),intern(), substring().
+java.lang.String class implements Serializable, Comparable, and CharSequence.
+
+
+CharSequence is used to represent a  sequence of characters. It is implemented by String, StringBuffer, StringBuilder classes. It means we can create 
+in java by using these 3 classes.
+
+Java String is immutable. It can not be changed whenever we create a new string a new instance is created. for mutable string we can use StringBuffer
+and StringBuilder Classes.
+
+2 ways to create a string.
+________________________________________
+1.By literal.
+String ory = "MUTUYIMANA Origene"
+2.By new keyword.
+String s1 = new String("origene");
+System.out.println(s1);
+
+Immutable String in Java
+___________________________________________
+It simply means that is unchangeable, unmodifiable. once string is created it can not change but a new object is created.
+ex: 
+String ex = "RRA";
+ex.concat("RDB");
+System.out.println(ex); // can not change because 
+there are two object are created but they are still refer to the one.
+so we can do like this.
+s =s.concat("RDB");
+now ouptu is 
+System.out.println(s);

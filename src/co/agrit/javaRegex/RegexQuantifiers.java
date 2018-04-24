@@ -1,4 +1,4 @@
-package javaRegex;
+package co.agrit.javaRegex;
 
 public class RegexQuantifiers {
 

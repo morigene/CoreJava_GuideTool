@@ -36,7 +36,14 @@ public class Test2 {
 			System.out.println( " The student "+(i + 1) +"'s"+ " has marks:  "+countMarks);
 		}
 			
-				
+			
+		String str = " Welcome to javatpoint.com";
+		char []ch = {'2','o','r','g','e','n','e'};
+		System.out.println(ch);
+
+		int []o = {4 , 5 ,4,3,2 ,9};
+		System.out.println( o );
+		
 		}
 	}		
 

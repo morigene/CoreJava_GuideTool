@@ -29,3 +29,10 @@ so we can do like this.
 s =s.concat("RDB");
 now ouptu is 
 System.out.println(s);
+
+Substring
+_______________________________________________
+A part of string is called substring. another world substring is a subset of another string.
+
+StringBuffer and String are the same except it is mutable. It can be changed. 
+

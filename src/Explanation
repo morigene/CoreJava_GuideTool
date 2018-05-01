@@ -1195,5 +1195,40 @@ RECURSION IN JAVA
 ==============================================================================
 It is a process in java in which a method call itself continuously. A Method that call itself is called in recursive method.
 It make code compact but difficult to understand.
- 
 
+EXCEPTIONAL HANDLING
+=================================================================================
+It is a powerfull mechanism  to handle the runtime errors so that a normal flow of application  can be maintained.
+In Dictionary is abnormal condition but in java is an event that disrupts a normal flow of a program.
+It is an object which is thrown at runtime.
+
+Hierarchy of Exception class
+_________________________________________________
+Throwable
+1.Exception
+2.Errors.
+1.Exception
+________________________________
+IOException
+ClassNotFound
+SQLException
+Runtime Exception
+a.Arthmetic Exception
+b.NullPointer Exception
+c.NumberFormat Exception
+d.IndexOutOfBoundException.
+d.i ArrayIndexOutOfBoundException.
+d.ii String IndexOutOFBoundException.
+2. Errors
+________________________________________
+a.StackOverFlowError
+b.VirtualMachineError.
+c.OutOfMemoryError.
+
+Type of Exception
+________________________________________
+1.Checked. except runtime exception and error . sqlexception, ioexception. 
+2.Unchecked. arthimetic exception, nullpointer exception
+3.Error. irrecavarable.
+
+ 

@@ -1231,4 +1231,106 @@ ________________________________________
 2.Unchecked. arthimetic exception, nullpointer exception
 3.Error. irrecavarable.
 
- 
+Inner Class
+______________________________________________
+A class inside another or interface. It is more readable and maintanable.
+Advantages.
+------------
+1. represent special type of relationship. It can access all data members and methods of outer class.
+2. Develop more readable and maintainable because it groups locally classes.
+3.Code optimization. It requires less code to write.
+
+Difference between nested class and inner class.
+----------
+inner class is a part of nested class. non static nested classes are known as inner class.
+two type of nested class
+------------------------------------
+1.nested classes non static
+2. static nested classes.
+
+type of non-static nested class(inner classes).
+-------------------------
+
+1.Member inner class. Class created within class outside method
+2.Anonymous inner class.A class created for implementing interface or extending classes. 
+3.Local inner class. Class created within a method.
+
+A static nested class. A static class created within a class.
+A static nested interface.
+
+Multithreading  in Java
+__________________________________________________
+Multitask: running multiple task concurrently.
+
+Thread: single sequence execution of a program
+A thread is subset of process. A process execute task and a process can have many many thread.
+
+A Multitasking based on process is multiprocessing while multitasking based on thread is Multithreading.
+Life Cycle of a  thread (Thread state).
+----------------------------------
+1.New
+2.Runnable
+3.Running.
+4.Non-Runnable(Blocked)
+5.Terminated.
+Two ways to create thread
+----------------------------------
+1.By extending thread class	.
+2.By implementing Runnable Interface.
+
+Thread scheduler.
+--------
+It is a part of the java virtual machine that decides which thread should run.no guarantee which thread should chosen to run.
+ Difference between preemptive scheduling and time slicing.
+ ----------------------------------------------
+Under preemptive scheduling: The highest priority task executes until it enters in waiting or dead state.
+Under slice time. A task executes for predefined slice of time and then enters the pool of read tasks.
+Sleep method 
+-------------
+used to sleep a thread for a specified amount of time.
+sleep(long milliseconds)
+sleep(long milliseconds, int nanos)
+Join method
+-----------------------------------
+join  method waits for a thread  to die. Another words it causes the current running thread to stop executing until the thread joins with
+completes its task.
+Deamon Thread
+-----------------------------------
+A service provider that provide a service to the user.Its life depend on mercy of user.u can see all details by jconsole.
+
+Java Thread pool
+-----------------------------------
+represents a group of worker threads that are waiting for a job and reuse many times.
+adv: It saves time because no need to create new thread.
+
+JAVA IO 
+____________________________________________________
+Sequence InputStream is used to read data from multiple streams. It reads data sequentially(one by one)
+---------
+Java ByteArrayOutputStream
+-----------
+used to write common data into multiple files.The data is written into a byte array which can be written into multiple stream later.
+java ByteArrayInputStream
+----------
+two words: ByteArray and InputStream used to read byte array as input stream.
+DataOutputStream.
+---------
+Allow application to write primitive java data type to output stream in a machine independent way.
+Java application 	generally uses data output stream to write data that can be read later as input stream.
+
+DataInpudstStream
+---------
+Allows an application to read primitive data from the input stream in a machine-independent way. generally uses the data output
+stream to write data that can  be read later by a data input stream.
+
+Writer and REader class used for reading and writing characters.
+----------------------------------------------------
+FileWriter and FileReader used for write and read data oriented data to a file.
+
+Java PushbackInputStream class overrides InputStream and provides extra functionality to another input stream. It can unread a byte which is already and push back one byte.
+
+
+
+
+
+
